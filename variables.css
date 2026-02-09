@@ -1,0 +1,179 @@
+/* ===================================
+   CSS CUSTOM PROPERTIES (VARIABLES)
+   =================================== */
+
+:root {
+    /* Color Palette */
+    --color-primary: #6C5CE7;
+    --color-primary-dark: #5B4BC9;
+    --color-primary-light: #A29BFE;
+    
+    --color-secondary: #00B894;
+    --color-secondary-dark: #00987A;
+    --color-secondary-light: #55EFC4;
+    
+    --color-accent: #FD79A8;
+    --color-warning: #FDCB6E;
+    --color-error: #FF7675;
+    --color-success: #00B894;
+    
+    /* Neutral Colors */
+    --color-dark: #2D3436;
+    --color-dark-2: #636E72;
+    --color-dark-3: #95A5A6;
+    
+    --color-light: #F8F9FA;
+    --color-light-2: #E9ECEF;
+    --color-light-3: #DEE2E6;
+    
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    
+    /* Background Colors */
+    --bg-primary: var(--color-white);
+    --bg-secondary: var(--color-light);
+    --bg-dark: var(--color-dark);
+    --bg-gradient: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    
+    /* Text Colors */
+    --text-primary: var(--color-dark);
+    --text-secondary: var(--color-dark-2);
+    --text-muted: var(--color-dark-3);
+    --text-light: var(--color-white);
+    
+    /* Typography */
+    --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    --font-heading: 'Poppins', var(--font-primary);
+    --font-mono: 'Fira Code', 'Courier New', monospace;
+    
+    /* Font Sizes */
+    --fs-xs: 0.75rem;      /* 12px */
+    --fs-sm: 0.875rem;     /* 14px */
+    --fs-base: 1rem;       /* 16px */
+    --fs-lg: 1.125rem;     /* 18px */
+    --fs-xl: 1.25rem;      /* 20px */
+    --fs-2xl: 1.5rem;      /* 24px */
+    --fs-3xl: 1.875rem;    /* 30px */
+    --fs-4xl: 2.25rem;     /* 36px */
+    --fs-5xl: 3rem;        /* 48px */
+    --fs-6xl: 3.75rem;     /* 60px */
+    --fs-7xl: 4.5rem;      /* 72px */
+    
+    /* Font Weights */
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-extrabold: 800;
+    
+    /* Line Heights */
+    --lh-tight: 1.2;
+    --lh-normal: 1.5;
+    --lh-relaxed: 1.75;
+    --lh-loose: 2;
+    
+    /* Spacing Scale */
+    --space-1: 0.25rem;    /* 4px */
+    --space-2: 0.5rem;     /* 8px */
+    --space-3: 0.75rem;    /* 12px */
+    --space-4: 1rem;       /* 16px */
+    --space-5: 1.25rem;    /* 20px */
+    --space-6: 1.5rem;     /* 24px */
+    --space-8: 2rem;       /* 32px */
+    --space-10: 2.5rem;    /* 40px */
+    --space-12: 3rem;      /* 48px */
+    --space-16: 4rem;      /* 64px */
+    --space-20: 5rem;      /* 80px */
+    --space-24: 6rem;      /* 96px */
+    
+    /* Border Radius */
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+    --radius-2xl: 1.5rem;
+    --radius-full: 9999px;
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+    
+    /* Transitions */
+    --transition-fast: 150ms ease-in-out;
+    --transition-base: 250ms ease-in-out;
+    --transition-slow: 350ms ease-in-out;
+    --transition-slower: 500ms ease-in-out;
+    
+    /* Z-Index Scale */
+    --z-dropdown: 1000;
+    --z-sticky: 1020;
+    --z-fixed: 1030;
+    --z-modal-backdrop: 1040;
+    --z-modal: 1050;
+    --z-popover: 1060;
+    --z-tooltip: 1070;
+    
+    /* Container Widths */
+    --container-xs: 480px;
+    --container-sm: 640px;
+    --container-md: 768px;
+    --container-lg: 1024px;
+    --container-xl: 1280px;
+    --container-2xl: 1536px;
+    
+    /* Breakpoints (for reference in JS) */
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1280px;
+    --breakpoint-2xl: 1536px;
+    
+    /* Animation Timing Functions */
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --ease-in: cubic-bezier(0.4, 0, 1, 1);
+    --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    /* Grid & Layout */
+    --grid-gap: var(--space-6);
+    --section-padding: var(--space-20);
+    --navbar-height: 80px;
+}
+
+/* Dark Mode Variables (Optional Enhancement) */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-primary: var(--color-dark);
+        --bg-secondary: #1a1d1f;
+        --text-primary: var(--color-light);
+        --text-secondary: var(--color-light-2);
+        --text-muted: var(--color-light-3);
+    }
+}
+
+/* Tablet Adjustments */
+@media (max-width: 1024px) {
+    :root {
+        --fs-5xl: 2.5rem;      /* 40px */
+        --fs-6xl: 3rem;        /* 48px */
+        --fs-7xl: 3.5rem;      /* 56px */
+        --section-padding: var(--space-16);
+    }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    :root {
+        --fs-4xl: 1.875rem;    /* 30px */
+        --fs-5xl: 2rem;        /* 32px */
+        --fs-6xl: 2.25rem;     /* 36px */
+        --fs-7xl: 2.5rem;      /* 40px */
+        --section-padding: var(--space-12);
+        --navbar-height: 70px;
+    }
+}

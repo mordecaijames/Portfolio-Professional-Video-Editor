@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Video Production Cost Calculator - Get instant quotes for your video projects">
+    <title>Video Production Cost Calculator</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="results.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">
+                    <span class="logo-icon">🎬</span>
+                    Video Cost Calculator
+                </h1>
+                <p class="tagline">Get instant pricing for your video project</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Calculator -->
+    <main class="main">
+        <div class="container">
+            <div class="calculator-layout">
+                <!-- Input Section -->
+                <section class="calculator-panel">
+                    <div class="panel-header">
+                        <h2>Project Details</h2>
+                        <p>Fill in your project requirements to get an instant quote</p>
+                    </div>
+                    
+                    <form id="calculatorForm" class="calculator-form">
+                        <!-- Video Length -->
+                        <div class="form-section">
+                            <label class="form-label">
+                                <span class="label-text">Video Length (minutes)</span>
+                                <span class="label-info" title="Finished video duration">ℹ️</span>
+                            </label>
+                            <div class="input-group">
+                                <input 
+                                    type="range" 
+                                    id="videoLength" 
+                                    name="videoLength" 
+                                    min="1" 
+                                    max="60" 
+                                    value="5" 
+                                    class="range-input"
+                                >
+                                <div class="range-value">
+                                    <span id="videoLengthValue">5</span> min
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Production Quality -->
+                        <div class="form-section">
+                            <label class="form-label">
+                                <span class="label-text">Production Quality</span>
+                            </label>
+                            <div class="radio-group">
+                                <label class="radio-card">
+                                    <input type="radio" name="quality" value="basic" checked>
+                                    <div class="radio-content">
+                                        <div class="radio-header">
+                                            <span class="radio-icon">📱</span>
+                                            <span class="radio-title">Basic</span>
+                                        </div>
+                                        <p class="radio-description">Simple cuts and transitions</p>
+                                        <p class="radio-price">$50/min</p>
+                                    </div>
+                                </label>
+                                
+                                <label class="radio-card">
+                                    <input type="radio" name="quality" value="standard">
+                                    <div class="radio-content">
+                                        <div class="radio-header">
+                                            <span class="radio-icon">🎥</span>
+                                            <span class="radio-title">Standard</span>
+                                        </div>
+                                        <p class="radio-description">Professional editing & effects</p>
+                                        <p class="radio-price">$100/min</p>
+                                    </div>
+                                </label>
+                                
+                                <label class="radio-card">
+                                    <input type="radio" name="quality" value="premium">
+                                    <div class="radio-content">
+                                        <div class="radio-header">
+                                            <span class="radio-icon">✨</span>
+                                            <span class="radio-title">Premium</span>
+                                        </div>
+                                        <p class="radio-description">Cinema-quality production</p>
+                                        <p class="radio-price">$200/min</p>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Number of Revisions -->
+                        <div class="form-section">
+                            <label class="form-label">
+                                <span class="label-text">Number of Revisions</span>
+                            </label>
+                            <div class="button-group">
+                                <button type="button" class="quantity-btn" data-action="decrease" data-target="revisions">-</button>
+                                <input 
+                                    type="number" 
+                                    id="revisions" 
+                                    name="revisions" 
+                                    value="2" 
+                                    min="0" 
+                                    max="10" 
+                                    class="quantity-input"
+                                    readonly
+                                >
+                                <button type="button" class="quantity-btn" data-action="increase" data-target="revisions">+</button>
+                            </div>
+                            <p class="form-hint">Each revision: $50</p>
+                        </div>
+
+                        <!-- Turnaround Time -->
+                        <div class="form-section">
+                            <label class="form-label">
+                                <span class="label-text">Turnaround Time</span>
+                            </label>
+                            <select id="turnaround" name="turnaround" class="select-input">
+                                <option value="standard">Standard (7 days) - No extra charge</option>
+                                <option value="rush3">Rush (3 days) - +25%</option>
+                                <option value="rush1">Express (24 hours) - +50%</option>
+                            </select>
+                        </div>
+
+                        <!-- Add-ons Section -->
+                        <div class="form-section">
+                            <label class="form-label">
+                                <span class="label-text">Add-ons & Enhancements</span>
+                            </label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-card">
+                                    <input type="checkbox" name="colorGrading" value="200">
+                                    <div class="checkbox-content">
+                                        <span class="checkbox-icon">🎨</span>
+                                        <div class="checkbox-text">
+                                            <span class="checkbox-title">Professional Color Grading</span>
+                                            <span class="checkbox-price">+$200</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                
+                                <label class="checkbox-card">
+                                    <input type="checkbox" name="motionGraphics" value="300">
+                                    <div class="checkbox-content">
+                                        <span class="checkbox-icon">✨</span>
+                                        <div class="checkbox-text">
+                                            <span class="checkbox-title">Motion Graphics Package</span>
+                                            <span class="checkbox-price">+$300</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                
+                                <label class="checkbox-card">
+                                    <input type="checkbox" name="soundDesign" value="250">
+                                    <div class="checkbox-content">
+                                        <span class="checkbox-icon">🎵</span>
+                                        <div class="checkbox-text">
+                                            <span class="checkbox-title">Advanced Sound Design</span>
+                                            <span class="checkbox-price">+$250</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                
+                                <label class="checkbox-card">
+                                    <input type="checkbox" name="subtitles" value="100">
+                                    <div class="checkbox-content">
+                                        <span class="checkbox-icon">💬</span>
+                                        <div class="checkbox-text">
+                                            <span class="checkbox-title">Subtitles & Captions</span>
+                                            <span class="checkbox-price">+$100</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                
+                                <label class="checkbox-card">
+                                    <input type="checkbox" name="customMusic" value="150">
+                                    <div class="checkbox-content">
+                                        <span class="checkbox-icon">🎼</span>
+                                        <div class="checkbox-text">
+                                            <span class="checkbox-title">Custom Music Licensing</span>
+                                            <span class="checkbox-price">+$150</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                
+                                <label class="checkbox-card">
+                                    <input type="checkbox" name="voiceover" value="200">
+                                    <div class="checkbox-content">
+                                        <span class="checkbox-icon">🎙️</span>
+                                        <div class="checkbox-text">
+                                            <span class="checkbox-title">Professional Voiceover</span>
+                                            <span class="checkbox-price">+$200</span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-secondary" id="resetBtn">Reset</button>
+                            <button type="button" class="btn btn-primary" id="calculateBtn">Calculate Cost</button>
+                        </div>
+                    </form>
+                </section>
+
+                <!-- Results Section -->
+                <section class="results-panel" id="resultsPanel">
+                    <div class="results-sticky">
+                        <div class="panel-header">
+                            <h2>Cost Estimate</h2>
+                            <p>Live pricing based on your selections</p>
+                        </div>
+                        
+                        <!-- Total Cost Display -->
+                        <div class="total-cost">
+                            <div class="cost-label">Total Project Cost</div>
+                            <div class="cost-amount" id="totalCost">$0</div>
+                            <div class="cost-note">Professional video editing services</div>
+                        </div>
+
+                        <!-- Cost Breakdown -->
+                        <div class="breakdown-section">
+                            <h3 class="breakdown-title">Cost Breakdown</h3>
+                            <div class="breakdown-list" id="breakdownList">
+                                <div class="breakdown-item">
+                                    <span class="breakdown-label">Configure your project to see pricing</span>
+                                    <span class="breakdown-value">-</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Summary -->
+                        <div class="summary-section">
+                            <h3 class="summary-title">Project Summary</h3>
+                            <div class="summary-list" id="summaryList">
+                                <div class="summary-item">
+                                    <span class="summary-icon">📹</span>
+                                    <span class="summary-text">Select options to generate summary</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="results-actions">
+                            <button class="btn btn-outline btn-block" id="saveQuoteBtn">
+                                <span>💾</span> Save Quote
+                            </button>
+                            <button class="btn btn-primary btn-block" id="requestQuoteBtn">
+                                <span>📧</span> Request Full Quote
+                            </button>
+                        </div>
+
+                        <!-- Disclaimer -->
+                        <div class="disclaimer">
+                            <p><strong>Note:</strong> This is an estimate. Final pricing may vary based on project complexity and specific requirements.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Pricing FAQs</h2>
+            <div class="faq-grid">
+                <div class="faq-card">
+                    <h3>What's included in the base price?</h3>
+                    <p>Base price includes video editing, basic transitions, color correction, and audio mixing.</p>
+                </div>
+                <div class="faq-card">
+                    <h3>Can I get a custom quote?</h3>
+                    <p>Yes! Click "Request Full Quote" to get a personalized quote for complex projects.</p>
+                </div>
+                <div class="faq-card">
+                    <h3>What if I need more revisions?</h3>
+                    <p>Additional revisions beyond your package are $50 each.</p>
+                </div>
+                <div class="faq-card">
+                    <h3>Do you offer package deals?</h3>
+                    <p>Yes! Contact us for monthly retainer packages with discounted rates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Video Production Calculator. Professional editing services.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="calculator.js"></script>
+    <script src="pricingEngine.js"></script>
+    <script src="exportResults.js"></script>
+</body>
+</html>

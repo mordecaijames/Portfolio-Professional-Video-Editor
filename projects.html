@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of professional video editing projects">
+    <title>Projects | Professional Video Editor Portfolio</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">VideoEditor</span>
+                </a>
+                
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Hero -->
+    <section class="projects-hero">
+        <div class="container">
+            <h1>My Work</h1>
+            <p>A showcase of my recent video editing projects</p>
+        </div>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="projects-filter">
+        <div class="container">
+            <div class="filter-buttons" id="filterButtons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="documentary">Documentary</button>
+                <button class="filter-btn" data-filter="creative">Creative</button>
+                <button class="filter-btn" data-filter="social">Social Media</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="commercial">
+                    <div class="project-thumbnail">
+                        <img src="assets/images/project-1.jpg" alt="Corporate Brand Video">
+                        <div class="project-overlay">
+                            <button class="play-btn" data-project="1" aria-label="View project">▶</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Corporate Brand Video</h3>
+                        <p class="project-category">Commercial</p>
+                        <p class="project-description">2-minute brand story for a tech startup</p>
+                        <div class="project-tags">
+                            <span class="tag">Premiere Pro</span>
+                            <span class="tag">Color Grading</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="documentary">
+                    <div class="project-thumbnail">
+                        <img src="assets/images/project-2.jpg" alt="Travel Documentary">
+                        <div class="project-overlay">
+                            <button class="play-btn" data-project="2" aria-label="View project">▶</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Travel Documentary</h3>
+                        <p class="project-category">Documentary</p>
+                        <p class="project-description">15-minute documentary about cultural exploration</p>
+                        <div class="project-tags">
+                            <span class="tag">Final Cut Pro</span>
+                            <span class="tag">Sound Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="creative">
+                    <div class="project-thumbnail">
+                        <img src="assets/images/project-3.jpg" alt="Music Video">
+                        <div class="project-overlay">
+                            <button class="play-btn" data-project="3" aria-label="View project">▶</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Indie Music Video</h3>
+                        <p class="project-category">Creative</p>
+                        <p class="project-description">High-energy music video with motion graphics</p>
+                        <div class="project-tags">
+                            <span class="tag">After Effects</span>
+                            <span class="tag">Motion Graphics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-category="social">
+                    <div class="project-thumbnail">
+                        <img src="assets/images/project-4.jpg" alt="Instagram Reels">
+                        <div class="project-overlay">
+                            <button class="play-btn" data-project="4" aria-label="View project">▶</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Instagram Reels Series</h3>
+                        <p class="project-category">Social Media</p>
+                        <p class="project-description">30-second vertical videos for brand engagement</p>
+                        <div class="project-tags">
+                            <span class="tag">Mobile Optimized</span>
+                            <span class="tag">Fast-paced</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card" data-category="commercial">
+                    <div class="project-thumbnail">
+                        <img src="assets/images/project-5.jpg" alt="Product Launch">
+                        <div class="project-overlay">
+                            <button class="play-btn" data-project="5" aria-label="View project">▶</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Product Launch Video</h3>
+                        <p class="project-category">Commercial</p>
+                        <p class="project-description">Cinematic reveal for a new tech product</p>
+                        <div class="project-tags">
+                            <span class="tag">DaVinci Resolve</span>
+                            <span class="tag">Cinematic</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card" data-category="documentary">
+                    <div class="project-thumbnail">
+                        <img src="assets/images/project-6.jpg" alt="Environmental Doc">
+                        <div class="project-overlay">
+                            <button class="play-btn" data-project="6" aria-label="View project">▶</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Environmental Story</h3>
+                        <p class="project-category">Documentary</p>
+                        <p class="project-description">Short film about sustainability efforts</p>
+                        <div class="project-tags">
+                            <span class="tag">Interview Editing</span>
+                            <span class="tag">B-Roll</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="project-card" data-category="creative">
+                    <div class="project-thumbnail">
+                        <img src="assets/images/project-7.jpg" alt="Short Film">
+                        <div class="project-overlay">
+                            <button class="play-btn" data-project="7" aria-label="View project">▶</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Narrative Short Film</h3>
+                        <p class="project-category">Creative</p>
+                        <p class="project-description">5-minute dramatic short with complex editing</p>
+                        <div class="project-tags">
+                            <span class="tag">Storytelling</span>
+                            <span class="tag">Visual Effects</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="project-card" data-category="social">
+                    <div class="project-thumbnail">
+                        <img src="assets/images/project-8.jpg" alt="TikTok Campaign">
+                        <div class="project-overlay">
+                            <button class="play-btn" data-project="8" aria-label="View project">▶</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>TikTok Campaign</h3>
+                        <p class="project-category">Social Media</p>
+                        <p class="project-description">Viral content series for fashion brand</p>
+                        <div class="project-tags">
+                            <span class="tag">Trendy</span>
+                            <span class="tag">Engaging</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 9 -->
+                <div class="project-card" data-category="commercial">
+                    <div class="project-thumbnail">
+                        <img src="assets/images/project-9.jpg" alt="Training Video">
+                        <div class="project-overlay">
+                            <button class="play-btn" data-project="9" aria-label="View project">▶</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Corporate Training</h3>
+                        <p class="project-category">Commercial</p>
+                        <p class="project-description">Educational series with graphics and animations</p>
+                        <div class="project-tags">
+                            <span class="tag">Educational</span>
+                            <span class="tag">Graphics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-body">
+                <div class="modal-video">
+                    <img id="modalImage" src="" alt="Project">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle">Project Title</h2>
+                    <p class="modal-category" id="modalCategory">Category</p>
+                    <p class="modal-description" id="modalDescription">Project description goes here...</p>
+                    <div class="modal-details">
+                        <div class="detail-item">
+                            <strong>Client:</strong>
+                            <span id="modalClient">Client Name</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Duration:</strong>
+                            <span id="modalDuration">2:30</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Year:</strong>
+                            <span id="modalYear">2024</span>
+                        </div>
+                    </div>
+                    <div class="modal-tags" id="modalTags">
+                        <!-- Tags will be inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Like What You See?</h2>
+            <p>Let's create something amazing together</p>
+            <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>VideoEditor</h4>
+                    <p>Professional video editing services for creative projects.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="YouTube">YouTube</a>
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 VideoEditor. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+    <script src="projectGallery.js"></script>
+</body>
+</html>

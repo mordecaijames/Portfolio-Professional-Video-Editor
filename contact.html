@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch for professional video editing services">
+    <title>Contact | Professional Video Editor</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">VideoEditor</span>
+                </a>
+                
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Let's Work Together</h1>
+            <p>Ready to bring your vision to life? Get in touch and let's discuss your project.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>Whether you have a project in mind or just want to chat about video editing, I'd love to hear from you.</p>
+                    
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon">📧</div>
+                            <div class="info-text">
+                                <h4>Email</h4>
+                                <p><a href="mailto:hello@videoeditor.com">hello@videoeditor.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">📱</div>
+                            <div class="info-text">
+                                <h4>Phone</h4>
+                                <p><a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">📍</div>
+                            <div class="info-text">
+                                <h4>Location</h4>
+                                <p>Los Angeles, CA</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">⏰</div>
+                            <div class="info-text">
+                                <h4>Availability</h4>
+                                <p>Mon - Fri: 9AM - 6PM PST</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Links -->
+                    <div class="contact-social">
+                        <h3>Connect With Me</h3>
+                        <div class="social-links-large">
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <span class="social-icon">📷</span>
+                                <span class="social-name">Instagram</span>
+                            </a>
+                            <a href="#" class="social-link" aria-label="YouTube">
+                                <span class="social-icon">▶️</span>
+                                <span class="social-name">YouTube</span>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <span class="social-icon">💼</span>
+                                <span class="social-name">LinkedIn</span>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Behance">
+                                <span class="social-icon">🎨</span>
+                                <span class="social-name">Behance</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Response Info -->
+                    <div class="response-info">
+                        <h3>What to Expect</h3>
+                        <ul class="expectation-list">
+                            <li>✓ Response within 24 hours</li>
+                            <li>✓ Free initial consultation</li>
+                            <li>✓ Custom project quote</li>
+                            <li>✓ Portfolio samples relevant to your needs</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-message" id="formMessage"></div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input 
+                                    type="text" 
+                                    id="firstName" 
+                                    name="firstName" 
+                                    class="form-control" 
+                                    required
+                                    placeholder="John"
+                                >
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input 
+                                    type="text" 
+                                    id="lastName" 
+                                    name="lastName" 
+                                    class="form-control" 
+                                    required
+                                    placeholder="Doe"
+                                >
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form-control" 
+                                required
+                                placeholder="john@example.com"
+                            >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                class="form-control"
+                                placeholder="+1 (555) 123-4567"
+                            >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="projectType">Project Type *</label>
+                            <select id="projectType" name="projectType" class="form-control" required>
+                                <option value="">Select a project type</option>
+                                <option value="commercial">Commercial / Corporate</option>
+                                <option value="documentary">Documentary</option>
+                                <option value="creative">Creative / Artistic</option>
+                                <option value="social">Social Media Content</option>
+                                <option value="event">Event Coverage</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">Budget Range</label>
+                            <select id="budget" name="budget" class="form-control">
+                                <option value="">Select budget range (optional)</option>
+                                <option value="under1000">Under $1,000</option>
+                                <option value="1000-2500">$1,000 - $2,500</option>
+                                <option value="2500-5000">$2,500 - $5,000</option>
+                                <option value="5000-10000">$5,000 - $10,000</option>
+                                <option value="over10000">$10,000+</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="timeline">Project Timeline</label>
+                            <select id="timeline" name="timeline" class="form-control">
+                                <option value="">When do you need this? (optional)</option>
+                                <option value="urgent">ASAP (within 1 week)</option>
+                                <option value="soon">Soon (1-2 weeks)</option>
+                                <option value="flexible">Flexible (2-4 weeks)</option>
+                                <option value="planning">Planning (1+ months)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Tell Me About Your Project *</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                class="form-control" 
+                                rows="6" 
+                                required
+                                placeholder="Describe your project, goals, and any specific requirements..."
+                            ></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" value="yes">
+                                <span>Send me tips and updates about video production</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary form-submit">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-icon">→</span>
+                        </button>
+                        
+                        <p class="form-note">
+                            * Required fields. Your information is kept private and secure.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="contact-faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-card">
+                    <h3>How quickly can you start?</h3>
+                    <p>I typically can start new projects within 1-2 weeks, depending on my current workload. Rush projects may be available for an additional fee.</p>
+                </div>
+                
+                <div class="faq-card">
+                    <h3>What's your pricing structure?</h3>
+                    <p>Pricing varies based on project complexity, length, and turnaround time. I provide custom quotes after our initial consultation.</p>
+                </div>
+                
+                <div class="faq-card">
+                    <h3>Do you offer revisions?</h3>
+                    <p>Yes! Most packages include 2-3 rounds of revisions. Additional revisions can be added if needed.</p>
+                </div>
+                
+                <div class="faq-card">
+                    <h3>What file formats do you work with?</h3>
+                    <p>I work with all major video formats including MP4, MOV, AVI, ProRes, and raw footage from any camera.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>VideoEditor</h4>
+                    <p>Professional video editing services for creative projects.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="YouTube">YouTube</a>
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 VideoEditor. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+    <script src="contactForm.js"></script>
+</body>
+</html>
